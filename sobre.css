@@ -1,0 +1,192 @@
+*{
+    margin:0;
+     padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --Branco:#FAF5F5;
+    --Preto:#1b2021;
+    --RosaEscuro:#ea638c;
+    --Vinho:#89023e;
+    --Preto:#1b2021;
+    --fonte-geral: "Inter" , sans-serif; 
+}
+body{
+    font-family: var(--fonte-geral);
+    background-color: var(--Branco);
+}
+.container{
+    max-width:1374px;
+    margin:0 auto;
+    justify-content: center;
+}
+.logo{
+    width: 210px;
+    margin-left: 10px;
+}
+.grid-menu{
+     display: grid;
+     grid-template-columns: 1fr 3fr 1fr ;
+     align-items: center;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; 
+}
+#menu .botoes-menu a{ 
+
+    font-size: 1rem;
+    font-family: var(--fonte-geral);
+    border-radius: 20px;
+    padding: 15px;
+    text-decoration: none;
+}
+.botao-rosa{
+    background-color:var(--Vinho);
+    color:var(--RosaEscuro);
+}
+.botao-branco{
+    background-color: var(--Vinho);
+    color: var(--Branco);
+}
+.botao-rosa:hover{
+    color: var(--Branco);
+}
+.botao-branco:hover{
+    color: var(--RosaEscuro);
+}
+.icones{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+
+
+#conteudo {
+    max-width: 75rem;
+    margin: 10px auto 20px;
+    padding: 0 10px;
+}
+
+#banner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    min-height: 100%;
+    padding: 20px 30px 0px;
+    background-color: var(--RosaEscuro);
+    border-radius: 40px;
+    font-family: var(--fonte-geral);
+    margin-left: 80px;
+}
+.container.banner {
+    min-width: 0;
+    
+}
+
+.texto-banner{
+    color: var(--Vinho);
+    font-size: 35px;
+}
+
+.texto-branco {
+    margin-left: 20px;
+    color: var(--Branco);
+}
+
+.texto-banner p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#banner img {
+    width: 450px;
+}
+
+
+
+
+
+.textos-sobre{
+    margin-top: 50px;
+    font-size: 45px;
+    font-family: var(--fonte-geral);
+    color: var(--Vinho);
+}
+.descricao{
+     color: var(--Vinho);
+    font-family: var(--fonte-geral);
+    font-size: 25px;
+    margin: 10px 0;
+}
+.produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-items: center;
+    margin-top: 70px;
+    width: 90%;
+    margin-left: 80px;
+}
+.fundo-celulares{
+     background-color: var(--RosaEscuro);
+    border-radius: 45px;
+    padding: 30px 0px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 70px;
+}
+.icones1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.icones1 img{
+    max-height: 135px;
+    max-width: 100%;
+}
+.icones1 h2{
+    margin-top: 20px;
+    color: var(--Vinho);
+    font-family: var(--fonte-geral);
+}
+#nossamissao{
+    margin-bottom: 200px;
+}
+
+
+#rodape{
+    background-color: var(--Vinho);
+    margin-top: 100px;
+    min-height: 175px;
+    max-width: 1600px;
+    align-items: center;
+}
+.rodape{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items:center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.link1 a{
+    font-family: var(--fonte-geral);
+    text-decoration: none;
+    color: var(--Branco);
+    margin-left: 100px;
+}
+.link2 a{
+    font-family: var(--fonte-geral);
+    text-decoration: none;
+    color: var(--Branco);
+    margin-left: 100px;
+}

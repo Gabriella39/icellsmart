@@ -1,0 +1,296 @@
+*{
+    margin:0;
+     padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --Branco:#FAF5F5;
+    --Preto:#1b2021;
+    --RosaEscuro:#ea638c;
+    --Vinho:#89023e;
+    --Preto:#1b2021;
+    --fonte-geral: "Inter" , sans-serif; 
+}
+body{
+    font-family: var(--fonte-geral);
+    background-color:var(--Branco);
+}
+.container{
+    max-width:1374px;
+    margin:0 auto;
+}
+.logo{
+    width: 210px;
+    margin-left: 10px;
+}
+.grid-menu{
+     display: grid;
+     grid-template-columns: 1fr 3fr 1fr ;
+     align-items: center;
+
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; 
+    gap: 30px;
+}
+#menu .botoes-menu a{ 
+
+    font-size: 1rem;
+    font-family: var(--fonte-geral);
+    border-radius: 20px;
+    padding: 15px;
+    text-decoration: none;
+}
+.botao-rosa{
+    background-color:var(--Vinho);
+    color:var(--RosaEscuro);
+}
+.botao-branco{
+    background-color: var(--Vinho);
+    color: var(--Branco);
+}
+.botao-rosa:hover{
+    color: var(--Branco);
+}
+.botao-branco:hover{
+    color: var(--RosaEscuro);
+}
+.icones{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+#propaganda{
+    border-radius: 40px;
+    height: 25rem;
+    max-width: 75rem;
+    background-color:var(--RosaEscuro);
+    margin: 10px auto 20px;
+    padding: 20px 10px;
+    font-family: var(--fonte-geral);
+
+}
+.texto-propaganda{
+    color: var(--Vinho);
+    font-family: var(--fonte-geral);
+    font-size: 35px;
+    text-decoration: none;
+}
+.texto-branco{
+    margin-left: 50px;
+    color: var(--Branco);
+}
+.texto-propaganda p{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.texto-propaganda2{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 20px;
+
+}
+.banner img{
+    min-width: 100%;
+    width: 35rem;
+}
+.botao-oferta{
+    display: inline-block;
+    background-color: var(--Vinho);
+    color: var(--Branco);
+    padding: 12px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--fonte-geral);
+    margin-top: 20px;
+    margin-left: 80px;
+    font-size: 20px;
+}
+
+#categorias .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+}
+#categorias .container >div{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 20px;
+    justify-items: center;
+
+}
+.card-categoria{
+    margin-top: 40px;
+     background-color: var(--RosaEscuro);
+    border-radius: 45px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    min-height: 250px;
+}
+.card-iphone{
+         background-color: var(--RosaEscuro);
+    border-radius: 45px;
+    padding:20px;
+    width: 100%;
+      max-height:8rem;
+}
+.card-categoria img{
+    min-width: 100%;
+      max-height:17rem;
+
+}
+#categorias p{
+
+    display: flex;
+    align-items: center;
+    gap:20px;
+    background-color: var(--Vinho);
+    color: var(--Branco);
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: var(--fonte-geral);
+}
+#categorias a{
+    text-decoration: none;
+}
+#categorias p:hover{
+    color:var(--RosaEscuro);
+}
+
+
+h3{
+    display: flex;
+    height:90px;
+    width: 1000px;
+}
+
+
+.texto-vendidos{
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin-top: 40px;
+}
+.fundo-celulares{
+     background-color: var(--RosaEscuro);
+    border-radius: 45px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fundo-celulares img{
+    max-height: 17rem;
+    
+}
+
+h4{
+    margin-top: 10px;
+    font-family: var(--fonte-geral);
+}
+article a{
+    text-decoration: none;
+    color: var(--Preto);
+
+}
+.botoes{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    background-color: var(--Vinho);
+    color: var(--Branco);
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: var(--fonte-geral);
+}
+
+.botoes:hover{
+    color: var(--RosaEscuro);
+}
+#mensagem{
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+}
+.container-mensagem{
+    background-color: var(--RosaEscuro);
+    max-width: 75rem;
+    height: 303px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    border-radius: 35px;
+}
+
+ .mensagem{
+    color: var(--Preto);
+    font-size: 3rem;
+    padding: 80px;
+    font-size: 50px;
+}
+.container-mensagem img{
+height: 303px;
+}
+.textobranco{
+    color: var(--Branco);
+}
+.com-mundo{
+  margin-left: 30px;
+}
+
+
+
+#rodape{
+    background-color: var(--Vinho);
+    margin-top: 100px;
+    min-height: 175px;
+    max-width: 1600px;
+    align-items: center;
+}
+.rodape{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items:center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.link1 a{
+    font-family: var(--fonte-geral);
+    text-decoration: none;
+    color: var(--Branco);
+    margin-left: 100px;
+}
+.link2 a{
+    font-family: var(--fonte-geral);
+    text-decoration: none;
+    color: var(--Branco);
+    margin-left: 100px;
+}
